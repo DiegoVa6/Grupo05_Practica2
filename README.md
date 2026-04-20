@@ -59,10 +59,11 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-Si PowerShell bloquea la activación del entorno, ejecutar previamente:
-
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+En Linux/macOS bash:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ## Ejecución
@@ -100,4 +101,4 @@ Las principales librerías utilizadas son:
 
 ## Autores
 
-Grupo 05
+Grupo 05, Diego Valladares Ortega & Juan Luis del Valle.

@@ -7,3 +7,4 @@ scipy
 hdbscan
 jupyter
 ipykernel
+git+https://github.com/FelSiq/DBCV

@@ -121,6 +121,8 @@ Además, `requirements.txt` incluye la instalación de `DBCV` desde GitHub para 
 
 ## Resultados
 
+![Comparación de modelos de clustering](assets/comparacion_modelos_clustering.png)
+
 El análisis compara distintas técnicas de clustering y concluye que el pipeline basado en PCA y K-Means con `k = 6` ofrece una segmentación interpretable para el dataset estudiado.
 
 ## Licencia

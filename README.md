@@ -1,4 +1,4 @@
-# Grupo05_Practica2
+# Práctica 2: clustering de estrellas
 
 Práctica 2 de Aprendizaje Automático: determinación de tipos de estrellas mediante técnicas de aprendizaje no supervisado.
 
@@ -16,6 +16,8 @@ El análisis incluye:
 - Selección de un pipeline recomendado.
 - Caracterización de los clusters obtenidos.
 
+Este repositorio contiene el notebook principal, el dataset utilizado y las dependencias necesarias para reproducir el análisis.
+
 ## Estructura del proyecto
 
 ```text
@@ -25,10 +27,11 @@ Grupo05_Practica2/
 │   └── stars_data.csv
 │
 ├── practica2_estrellas.ipynb
+├── LICENSE
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-````
+```
 
 ## Dataset
 
@@ -38,6 +41,8 @@ El dataset utilizado se encuentra en:
 data/stars_data.csv
 ```
 
+El archivo de datos fue proporcionado por la universidad para el desarrollo de esta práctica académica.
+
 Contiene información sobre estrellas descritas mediante las siguientes variables:
 
 * `Temperature`: temperatura superficial de la estrella.
@@ -46,6 +51,12 @@ Contiene información sobre estrellas descritas mediante las siguientes variable
 * `A_M`: magnitud absoluta.
 * `Color`: color principal del espectro.
 * `Spectral_Class`: clase espectral.
+
+## Requisitos
+
+- Python 3.11 o superior.
+- Jupyter Notebook, JupyterLab o VS Code con extensión de Jupyter.
+- Dependencias indicadas en `requirements.txt`.
 
 ## Instalación
 
@@ -60,6 +71,7 @@ pip install -r requirements.txt
 ```
 
 En Linux/macOS bash:
+
 ```bash
 python3 -m venv venv
 source venv/bin/activate
@@ -75,6 +87,12 @@ practica2_estrellas.ipynb
 ```
 
 En VS Code o Jupyter Notebook, seleccionar el kernel correspondiente al entorno virtual `venv` y ejecutar todas las celdas.
+
+También se puede iniciar Jupyter desde la terminal:
+
+```bash
+jupyter notebook
+```
 
 ## Pipeline recomendado
 
@@ -98,6 +116,16 @@ Las principales librerías utilizadas son:
 * `scipy`
 * `hdbscan`
 * `jupyter`
+
+Además, `requirements.txt` incluye la instalación de `DBCV` desde GitHub para el cálculo de métricas de validación asociadas a DBSCAN.
+
+## Resultados
+
+El análisis compara distintas técnicas de clustering y concluye que el pipeline basado en PCA y K-Means con `k = 6` ofrece una segmentación interpretable para el dataset estudiado.
+
+## Licencia
+
+El código de este proyecto se distribuye bajo licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
 ## Autores
 
